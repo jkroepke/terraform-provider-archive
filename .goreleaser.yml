@@ -35,7 +35,6 @@ builds:
     ldflags:
       - -s -w -X main.Version={{.Version}}
     mod_timestamp: '{{ .CommitTimestamp }}'
-    binary: '{{ .ProjectName }}_v{{ .Version }}'
 checksum:
   algorithm: sha256
   extra_files:
